@@ -145,9 +145,7 @@ if($file_handle = fopen(FILENAME,"r")){
     </div>
     <div class="main-wrapper">
         <?php foreach($message_array as $value){ ?>
-            <hr>
-            <!-- 社員名 -->
-            <div class="name"><?=$value["name"];?></div>
+            
             <!-- タイトル・投稿日時 -->
             <div class="theme">
                 <!-- 重要事項か判断する処理 -->
@@ -157,22 +155,30 @@ if($file_handle = fopen(FILENAME,"r")){
 							<p class="black"><?=$value["title"]; ?><time><?=$value["post_date"]?></time></p>
 						<?php endif; ?>
             </div>
-            <hr>
-            <!-- 投稿内容 -->
-            <div class="contents"><?=$value["contents"]; ?></div>
-            <!-- 添付ファイル -->
-            <div class="contents">
-                    <a class="file" target="_blank" href="<?=$value["file_data"];?>" download>
-                        <?=$value["file_data"];?>
-                    </a>
-            </div>   
-            <!-- 添付画像 -->
-            <div class="contents">
-                <img class="img" src="<?=$value["img_data"];?>" alt="">
+            <!-- 社員名 -->
+            <div class="name"><?=$value["name"];?></div>
+
+            <div class="contents-wrapper">
+                <!-- 投稿内容 -->
+                <div class="contents"><?=$value["contents"]; ?></div>
+                <!-- 添付ファイル -->
+                <div class="contents">
+                        <a class="file" target="_blank" href="<?=$value["file_data"];?>" download>
+                            日報をダウンロード
+                        </a>
+                </div>  
+                
+                <hr>
+
+                <!-- 添付画像 -->
+                <div class="contents">
+                    <img class="img" src="<?=$value["img_data"];?>" alt="">
+                </div>
             </div>
+            
             <!-- フッターメニュー -->
             <div class="footer-menu-wrapper">
-                
+                    
                 <img class="toggle_img" src="./img/unlike.png" alt="">
 
             </div>

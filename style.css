@@ -183,8 +183,14 @@ time{
     vertical-align: middle;
 }
 
+.contents-wrapper{
+    padding: 1em;
+    border-radius: 3px;
+    background: #ffff;
+}
+
 .img{
-    width: 300px;
+    width: 100%;
 }
 
 .file{
@@ -199,7 +205,7 @@ time{
 .footer-menu-wrapper{
     display: flex;
     justify-content: end;
-    margin-bottom: 50px;
+    margin: 10px 0 50px;
 }
 
 
@@ -207,4 +213,30 @@ time{
 .toggle_img{
     width: 30px;
     float: right;
+}
+
+@media screen and (max-width:480px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+
+    body{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    form{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .top-wrapper{
+        display: block;
+    }
+
+    .menu{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
 }
