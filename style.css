@@ -1,0 +1,210 @@
+/* common */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background:#efefef;
+    color:#222;
+    width: 60%;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    color: #303030;
+}
+
+h2 {
+    margin-top: 0px;
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    margin: 0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #ccc;
+    margin:5px 0;
+    padding:0;
+}
+
+.title{
+    font-size: 20px;
+    color:#303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+/* form */
+form{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input[type="text"],input[type="file"],select,textarea {
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 86%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    width: 100%;
+}
+
+input[type="password"]{
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 86%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #fff;
+    width: 100%;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 86%;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color:#303030;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.7;
+}
+
+label{
+    color: red;
+}
+
+.content-title{
+    color: #303030;
+}
+
+.content-area{
+    margin-bottom: 30px;
+}
+
+
+/* login error */
+.error_message{
+    color: red;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 10px;
+    list-style-type: none;
+    text-align: center;
+    font-size: 80%;
+}
+
+/* top.php */
+.top-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    display: flex;
+}
+
+.menu li{
+    margin-left: 20px;
+    padding: 10px 20px;
+    color: #efefef;
+    font-size: 86%;
+    line-height: 1.0em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color:#303030;
+}
+
+.menu li:hover{
+    opacity: 0.7;
+}
+
+.menu li:last-child{
+    width: 30px;
+    background-color: #efefef;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #efefef;
+}
+
+.theme{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.black{
+    font-size: 22px;
+    color: black;
+}
+
+.red{
+    font-size: 22px;
+    color:red;
+}
+
+time{
+    font-size: 15px;
+    font-weight: lighter;
+    vertical-align: middle;
+}
+
+.img{
+    width: 300px;
+}
+
+.file{
+    font-size: 15px;
+    color: #1a0dab
+}
+
+.date{
+    font-size: 60;
+}
+
+.footer-menu-wrapper{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 50px;
+}
+
+
+/* いいね */
+.toggle_img{
+    width: 30px;
+    float: right;
+}
