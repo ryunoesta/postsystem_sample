@@ -14,7 +14,7 @@ if(!empty($_POST["btn"])){
     }elseif($_POST["password"]===PASS){
         $_SESSION["user_login"]=true;
     }else{$_SESSION["error"]="ログイン失敗しました";
-        header('Location: login.php');
+        header('Location: index.php');
         exit;
     }
 
